@@ -9,12 +9,12 @@ function App() {
     <BrowserRouter>
 
       <Routes>
-        <Route path='/' element={
+        <Route exact path='/' element={
           <div className="App">
             <Home/>
           </div>}/>
-        <Route path='/15-puntos' element={<FifteenPoints/>}/>
-        <Route path='/30-puntos' element={<ThirtyPoints/>}/>
+        <Route exact path='/15-puntos' element={<FifteenPoints/>}/>
+        <Route exact path='/30-puntos' element={<ThirtyPoints/>}/>
       </Routes>
     </BrowserRouter>
   );
