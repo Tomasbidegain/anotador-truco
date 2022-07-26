@@ -1,0 +1,21 @@
+.footer{
+    background-color:#dbd8ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    font-family: 'Acme', sans-serif;;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    footer p {
+        font-size: 0.5rem;
+    }
+}
