@@ -14,7 +14,7 @@ const Cuadro = ( {nombreClase, contador, id, name} ) => {
     }
 
     return ( 
-        <div className={`cuadrado-th ${verificarCuadro()} ${contador >= 5 && id === '1' && name === 'fifteen' ? 'diagonal'
+        <div className={`${name === 'thirty' ? 'cuadrado-th' : 'cuadrado'} ${verificarCuadro()} ${contador >= 5 && id === '1' && name === 'fifteen' ? 'diagonal'
                                                     :contador >= 10 && id === '2' && name === 'fifteen' ? 'diagonal'
                                                     :contador >= 15 && id === '3' && name === 'fifteen' ? 'diagonal'
                                                     :contador >= 5 && id === '1' && name === 'thirty' ? 'diagonal-th'
