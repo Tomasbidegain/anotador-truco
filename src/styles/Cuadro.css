@@ -1,7 +1,7 @@
 .cuadrado{
     width: 6rem;
     height: 6rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .cuadrado-th{
@@ -165,71 +165,70 @@
     .cuadrado{
         width: 4.5rem;
         height: 4.5rem;
-        margin-bottom: 2rem;
     }
     
     .cuadrado-th{
         width: 2.5rem;
         height: 2.5rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.4rem;
     }
     .top{
         width: 4.5rem;
         height: 4.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.9rem;
     }
     
     .right{
         width: 4.5rem;
         height: 4.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.9rem;
     }
     
     .bottom{
         width: 4.5rem;
         height: 4.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.9rem;
     }
     
     .left{
         width: 4.5rem;
         height: 4.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.9rem;
     }
     
     .diagonal{
         width: 4.5rem;
         height: 4.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.9rem;
     }
     
     .top-th{
         width: 2.5rem;
         height: 2.5rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.4rem;
     }
     
     .right-th{
         width: 2.5rem;
         height: 2.5rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.4rem;
     }
     
     .bottom-th{
         width: 2.5rem;
         height: 2.5rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.4rem;
     }
     
     .left-th{
         width: 2.5rem;
         height: 2.5rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.4rem;
     }
     
     .diagonal-th{
         width: 2.5rem;
         height: 2.5rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.4rem;
     }
 }
