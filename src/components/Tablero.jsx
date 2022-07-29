@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import Cuadro from "./Cuadro";
 import '../styles/Points.css';
 import '../styles/Tablero.css';
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
+import fondo from '../assets/img/hombre_truco.png';
+import fuegosArtificiales from '../assets/img/confeti1.gif';
 
 const Tablero = ( { name }) => {
     const [contadorNosotros, setContadorNosotros] = useState(0);
@@ -13,11 +15,16 @@ const Tablero = ( { name }) => {
     const thirty = [1,2,3,4,5,6]
 
     const mostrarAlerta = (namePlayer) =>{
-        swal({
+        Swal.fire({
             title: '¡Felicidades!',
             text: `${namePlayer} ganaron la partida`,
             button: 'aceptar',
-            icon: "success"
+            imageUrl: `${fondo}`,
+            imageWidth: 300,
+            backdrop: `
+                url("${fuegosArtificiales}")
+                rgba(0,0,029,0.85)
+            `
         }).then((value) => {
             if(value){
               window.location.href = "/";
@@ -55,15 +62,20 @@ const Tablero = ( { name }) => {
     }
 
     const sumarNosotros = () => {
-        if (contadorNosotros < 30){
+        if (contadorNosotros < 30 && name ==='thirty'){
             setCuadradoNosotros([...cuadradoNosotros, [contadorNosotros+1, true]])
             setContadorNosotros(contadorNosotros+1);
             nombreClaseNosotros()
-        } 
+        }
+        else if (contadorNosotros < 15 && name ==='fifteen'){
+            setCuadradoNosotros([...cuadradoNosotros, [contadorNosotros+1, true]])
+            setContadorNosotros(contadorNosotros+1);
+            nombreClaseNosotros()
+        }
     }
 
     const restarNosotros = () => {
-        if (contadorNosotros > 0){
+        if (contadorNosotros > 0 ){
             setCuadradoNosotros(cuadradoNosotros.slice(0, contadorNosotros-1))
             setContadorNosotros(contadorNosotros-1); 
             nombreClaseNosotros()
@@ -71,11 +83,16 @@ const Tablero = ( { name }) => {
     }
 
     const sumarEllos = () => {
-        if (contadorEllos < 30){
+        if (contadorEllos < 30 && name ==='thirty'){
             setCuadradoEllos([...cuadradoEllos, [contadorEllos+1, true]])
             setContadorEllos(contadorEllos+1);
             nombreClaseEllos()
         } 
+        else if (contadorEllos < 15 && name ==='fifteen'){
+            setCuadradoEllos([...cuadradoEllos, [contadorEllos+1, true]])
+            setContadorEllos(contadorEllos+1);
+            nombreClaseEllos()
+        }
     }
 
     const restarEllos = () => {
